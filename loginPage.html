@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <header class="header">
+        <h2 class="tractit">TrackIt</h2>
+    </header>
+
+    <div id="loginContainer">
+        <h3>Login to Your Account</h3>
+        <form id="loginForm">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" placeholder="Enter Email" required>
+
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" placeholder="Enter Password" required>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <div class="error-message" id="loginErrorMessage"></div>
+
+        <p>Don't have an account? <a href="signup.html">Sign Up here</a></p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

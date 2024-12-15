@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Finance Tracker</title>
+</head>
+<body>
+    <header class="header">
+        <h2 class="tractit">TrackIt</h2>
+        <nav>
+            <ul>
+                <li id="Home"><a href="">Home</a></li>
+                <li><a href="#Dashboard">Dashboard</a></li>
+                <li><a href="#AddExpense">Add Expense</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="./signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="welcome-heading">T-rack Your Finances Easily!</h1>
+            <p class="tagline">Stay on top of your expenses with just a few clicks.</p>
+            <button class="btn">Get Started</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="about">About Us</h2>
+        <p>TrackIt is your trusted partner for managing your finances. Our mission is to empower individuals with easy-to-use tools to track, budget, and optimize their financial well-being.</p>
+    </section>
+
+    <div id="features">
+        <h1 class="key-feature-head">Key Features</h1>
+        <div class="key-container">
+            <div class="card-container">
+                <h2 class="feature-head">Daily Expenses</h2>
+                <p class="expense-desc">Add your daily expenses effortlessly.</p>
+            </div>
+            <div class="card-container">
+                <h2 class="feature-head">Trends</h2>
+                <p class="expense-desc">View your spending trends.</p>
+            </div>
+            <div class="card-container">
+                <h2 class="feature-head">Goals</h2>
+                <p class="expense-desc">Set and track your savings goals.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div id="Dashboard">
+            <div class="summary-container">
+                <div class="expense-card">
+                    <h3 class="expense-heading">Total Expenses: $0.00</h3>
+                </div>
+                <div class="expense-card">
+                    <h3 class="ramaining-budget">Remaining Budget: $500.00</h3>
+                </div>
+            </div>
+
+            <div class="recent-transaction-container">
+                <h3>Recent Transactions: </h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="thead">Date</th>
+                            <th class="thead">Expense Name</th>
+                            <th class="thead">Amount</th>
+                            <th class="thead">Category</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recentTransaction"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="addExpense">
+            <form class="add-expense">
+                <label for="date" class="label">Date</label>
+                <input type="date" class="input" required>
+                
+                <label for="expense-name" class="label">Expense Name</label>
+                <input type="text" placeholder="Eg: Lunch" class="input" required>
+                
+                <label for="amount" class="label">Amount</label>
+                <input type="number" id="amount" placeholder="Eg: 100" class="input" required>
+                
+                <label for="category" class="label">Expense Type</label>
+                <select class="input" required>
+                    <option value="Food">Food</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Bills">Bills</option>
+                    <option value="Entertainment">Entertainment</option>
+                </select>
+                
+                <button type="submit" class="add-expense-btn btn">Add Expense</button>
+            </form>
+            <div class="error-message"></div>
+        </div>
+
+        <div id="reports">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount Spent</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Food</td>
+                        <td>₹300</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>Entertainment</td>
+                        <td>₹400</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td>Bills</td>
+                        <td>₹200</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>Transport</td>
+                        <td>₹100</td>
+                        <td>10%</td>
+                    </tr>
+                </tbody> 
+            </table>
+            <div class="Insights section">
+                <h3>Tips</h3>
+                <p>You spent 40% of your budget on entertainment. Consider reducing this category.</p>
+            </div>
+        </div>
+
+        <div id="settings">
+            <label for="budgetInput">Set Monthly Budget</label>
+            <input type="number" id="budgetInput" placeholder="Enter Budget" value="500">
+            <button class="dark-mode btn" id="darkMode">Dark Mode</button>
+        </div>
+    </div>
+
+    <footer>
+        <button class="backtop"> <a href="#Home"></a>Back To top</button>
+        <div class="footer-container">
+            <div class="About">
+                <h2 class="foot-head">Get to Know Us</h2>
+                <p>About TrackIt</p>
+                <p>Careers</p>
+            </div>
+            <div class="About">
+                <h2 class="foot-head">Connect With Us</h2>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+                <p>Youtube</p>
+            </div>
+            <div class="About">
+                <h2 class="foot-head">Track Your Money <br>With Us</h2>
+                <p>TrackIt Global</p>
+                <p>Fullfillment by TrackIt</p>
+            </div>
+            <div class="About">
+                <h2 class="foot-head">Let Us Help <br>You</h2>
+                <p>Your Account</p>
+                <p>TrackIt App Download</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+    if (loggedInUser){
+        document.querySelector('.welcome-heading').textContent = `Welcome, ${loggedInUser.username}!`;
+    }else{
+        window.location.href = 'loginPage.html';
+    }
+</script>
+    <script src="script.js"></script>
+</body>
+</html>

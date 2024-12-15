@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Roboto', sans-serif;
+}
+
+body.dark-mode{
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .header{
+    background-color: #333;
+}
+
+.body.dark-mode.nav li a {
+    color: #bbb;
+}
+
+.body.dark-mode.nav li a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(126, 221, 253);
+}
+
+.body.dark-mode .hero{
+    background-color: #333;
+    color: white;
+}
+
+.body.dark-mode .card-container{
+    background-color: #444;
+    color: white;
+}
+
+body.dark-mode .btn {
+    background-color: rgb(105, 6, 49);
+    color: white;
+}
+
+body.dark-mode input, body.dark-mode select, body.dark-mode button {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+}
+
+body.dark-mode .footer-container {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .backtop {
+    background-color: rgb(48, 65, 82);
+}
+
+body.dark-mode .sign-up {
+    background-color: #444;
+    color: white;
+}
+
+body.dark-mode .add-expense {
+    background-color: rgb(40, 40, 40);
+}
+
+body.dark-mode .add-expense-btn {
+    background-color: rgb(53, 3, 18);
+    color: white;
+}
+
+.dark-mode .dark-mode{
+    background-color: #444;
+    color: white;
+}
+
+.header {
+    background-color: rgb(4, 47, 97);
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header h2{
+    margin: 0;
+    font-size: 24px;
+}
+
+.tractit{
+    padding-left: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav li{
+    margin-right: 20px;
+}
+
+nav li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    color: white;
+    border-radius: 10px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+
+nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: rgb(126, 221, 253);
+    border-bottom: 3px solid rgb(168, 191, 237);
+
+}
+
+/* nav :hover{
+    color:rgb(133, 169, 224)
+} */
+
+#home{
+    background-color:lavenderblush;
+    margin-top: 0;
+    padding: 10px;
+}
+
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(108, 4, 37);
+    padding: 2rem;
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+.btn{
+background-color: rgb(105, 6, 49);
+color: white;
+border-radius: 15px;
+padding: 15px;
+border: 0 solid;
+width: 130px;
+font-size: 15px;
+margin-top: 10px;
+}
+
+.btn:hover{
+    background-color: rgb(230, 72, 135);
+    transform:scale(1.1);
+    color: rgb(53, 3, 18);
+    
+}
+ul, li{
+    list-style: none;
+    color: white;
+}
+
+#about{
+    background-color: azure;
+    margin-top: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(19, 3, 82);
+    height: 500px;
+}
+
+.main{
+    background-color: aliceblue;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+#features{
+    background-color: rgb(253, 253, 250);
+    padding: 10px;
+    padding-top: 20px;
+}
+.key-feature-head{
+    text-align: center;
+}
+
+.key-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.card-container{
+    width: 200px;
+    height: 130px;
+    background-color: rgb(214, 243, 248);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 20px;
+    text-align: center;
+    box-shadow: 5px 10px rgb(1, 85, 105);
+    transition: width 1s;
+}
+
+.card-container:hover{
+    width: 220px;
+}
+.btn-cont{
+    text-align: center;
+}
+
+.summary-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.thead
+
+.expense-card{
+    background-color: #c8f7eb;
+    width: 200px;
+    height: 130px;
+    border-radius: 20px;
+    border: 0 solid;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 20px;
+    text-align: center;
+    box-shadow: 5px 10px rgb(84, 108, 102);
+    transition: width 1s;
+}
+.expense-card:hover{
+    width: 220px;
+}
+.input{
+    width: 200px;
+    height: 30px;
+    border: 0 solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input.dark-mode,select.dark-mode, button.dark-mode{
+    background-color: #333;
+    color:white;
+    border:1px solid #444;
+}
+.add-expense{
+    background-color: rgb(242, 240, 237);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+.label{
+    font-size: 14px;
+    margin: 7px;
+}
+
+.add-expense-btn{
+width: 200px;
+}
+#signUp{
+    background-color: #f4fcfb;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign{
+    background-color:#c8f7eb;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.input-field{
+    margin: 7px;
+    width: 150px;
+    border-radius: 20px;
+    border: 0 solid;
+    padding: 10px;
+}
+.input-field:hover{
+    border: 0 solid white;
+}
+
+.sign-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sign-up{
+    color: white;
+    border-radius: 15px;
+    padding: 10pt;
+    border: 0 solid;
+    width: 130px;
+    background-color: rgb(6, 29, 156);
+    font-size: 15px;
+    box-shadow: 2px 2px 2px 2px #888888;
+    margin-top: 10px;
+}
+
+.sign-up:hover{
+    transform:scale(1.1);
+    background-color: rgb(52, 31, 209);
+    
+}
+.dark-mode{
+    background-color: #625f5f;
+}
+.dark-mode:hover{
+    background-color: black;
+    color: white;
+}
+.sign-up a{
+    color: antiquewhite;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+.backtop{
+    background-color: rgb(48, 65, 82);
+    margin-bottom: 0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    border:0 solid;
+}
+
+.footer-container{
+    background-color: rgb(39, 52, 68);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.About{
+    margin-right: 50px;
+}
+.foot-head{
+    margin-right: 30px;
+    font-size: 18px;
+}
+p{
+    font-size: 14px;
+}
